@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/dist/style.min.css">
+  <title>PQR - Componentes</title>
+</head>
+<body>
+  
+  <!-- Inicio navbar -->
+  <nav class="navbar custom_nav">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <img src="./assets/img/Mapfre-icon.svg" alt="logo_mapfre">
+        <img class="ms-5" src="./assets/img/navbar.svg" alt="logo_mapfre">
+      </div>
+    </div>
+  </nav>
+  <!-- Fin navbar -->
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+
+        <div class="container mt-5">
+          <div class="row">
+              <div class="col-md-12">
+                <!-- inicio barra de progreso -->
+                <div class="row d-flex justify-content-start mt-5 mb-4 progressbar">
+                  <div class="col-md-12 mt-3">
+                    <div class="multisteps-form__progress">
+                      <a class="multisteps-form__progress-btn js-active" href="#" title="Producto" disabled>Producto</a>
+                      <a class="multisteps-form__progress-btn" href="#" title="Datos generale" disabled>Datos generales</a>
+                      <a class="multisteps-form__progress-btn" href="#" title="Cotización" disabled>Cotización</a>
+                      <a class="multisteps-form__progress-btn" href="#" title="Datos adicionales" disabled>Datos adicionales</a>
+                      <a class="multisteps-form__progress-btn" href="#" title="Documentación" disabled>Documentación</a>
+                    </div>
+                  </div>
+                </div>
+                <!-- fin barra de progreso -->
+              </div>
+              <div class="col-md-4">
+                  <!-- formularios -->
+                  <div class="form" autocomplete="false">
+                      <div class="row">
+                          <div class="col-md-12">
+                              <h4 class="text-danger">Inputs</h4>
+                              <div class="form-group mt-3">
+                                  <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" placeholder="Por defecto">
+                                    <label class="form-label" for="floatingInput">Por defecto</label>
+                                  </div>
+                              </div>
+      
+                              <div class="form-group mt-3">
+                                  <div class="form-floating mb-3">
+                                    <input type="text" class="form-control is-valid" placeholder="Activo">
+                                    <label class="form-label" for="floatingInput">Activo</label>
+                                  </div>
+                              </div>
+      
+                              <div class="form-group mt-3">
+                                  <div class="form-floating mb-3">
+                                    <input type="text" class="form-control is-invalid" placeholder="Error">
+                                    <label class="form-label" for="floatingInput">Error</label>
+                                  </div>
+                              </div>
+      
+                              <div class="form-group">
+                                  <div class="form-floating">
+                                    <select id="type_document" class="form-select">
+                                      <option value="1">--SELECCIONA--</option>
+                                      <option value="2">Lorem</option>
+                                    </select>
+                                    <label class="pt-2">Selección</label>
+                                  </div>
+                              </div>
+      
+                          </div>
+                      </div>
+                  </div>
+              </div>
+      
+              <div class="col-md-4">
+                <h4 class="text-danger">Modals</h4>
+                <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#modal-warning">
+                  Modal warning
+                </button>
+              
+                  <!-- modal warning -->
+                  <div class="modal fade" id="modal-warning" tabindex="-1" role="dialog" aria-labelledby=""
+                      aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                          <div class="modal-content">
+                              <img class="icon-alert" src="./assets/img/modal-icon-warning.svg" />
+                              <div class="d-flex justify-content-end mt-2 me-2">
+                                  <span class="btn-close"  data-dismiss="modal" aria-label="Close"></span>
+                              </div>
+                              <div class="modal-body mt-2">
+                                  <div class="container text-center mt-4 mb-4">
+                                      <h4><strong class="text-title">Alerta (Nombre largo)</strong></h4>
+                                      <span>Esta es la información con la que generaremos tu póliza, debes revisarla muy bien</span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+      
+                  <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-success">
+                    Modal success
+                  </button>
+                
+                    <!-- modal success -->
+                    <div class="modal fade" id="modal-success" tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <img class="icon-alert" src="./assets/img/icon_alert_success.svg" />
+                                <div class="d-flex justify-content-end mt-2 me-2">
+                                    <span class="btn-close"  data-dismiss="modal" aria-label="Close"></span>
+                                </div>
+                                <div class="modal-body mt-2">
+                                    <div class="container text-center mt-4 mb-4">
+                                        <h4><strong class="text-title">Alerta (Nombre largo)</strong></h4>
+                                        <span>Esta es la información con la que generaremos tu póliza, debes revisarla muy bien</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+      
+                    <button type="button" class="btn btn-danger mt-3" data-toggle="modal" data-target="#modal-error">
+                      Modal error
+                    </button>
+                  
+                      <!-- modal error -->
+                      <div class="modal fade" id="modal-error" tabindex="-1" role="dialog" aria-hidden="true">
+                          <div class="modal-dialog modal-dialog-centered" role="document">
+                              <div class="modal-content">
+                                  <img class="icon-alert-error" src="./assets/img/alert-error-danger.svg" />
+                                  <div class="d-flex justify-content-end mt-2 me-2">
+                                      <span class="btn-close"  data-dismiss="modal" aria-label="Close"></span>
+                                  </div>
+                                  <div class="modal-body mt-2">
+                                      <div class="container text-center mt-4 mb-4">
+                                          <h4><strong class="text-title">Alerta (Nombre largo)</strong></h4>
+                                          <span>Esta es la información con la que generaremos tu póliza, debes revisarla muy bien</span>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+      
+                      <button type="button" class="btn btn-info mt-3" data-toggle="modal" data-target="#drag_and_drop">
+                        Drag and drop
+                      </button>
+                    
+                        <!-- Drag and drop -->
+                        <div class="modal fade drag_and_drop" id="drag_and_drop" tabindex="-1" role="dialog" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered " role="document">
+                                <div class="modal-content">
+                                    <img class="icon-alert" src="./assets/img/modal-icon-warning.svg" />
+                                    <div class="d-flex justify-content-end mt-2 me-2">
+                                        <span class="btn-close"  data-dismiss="modal" aria-label="Close"></span>
+                                    </div>
+                                    <div class="modal-body mt-2 px-4">
+                                        <div class="container mt-4 mb-4">
+                                            <div class="text-center">
+                                              <h5><strong class="text-title">Carga el documento “Cédula de ciudadanía”</strong></h5>
+                                              <span>Recuerda que los nombres deben cumplir con las siguientes características:</span>
+                                            </div>
+                                            <div class="document-requirements mt-3 p-3">
+                                              <ul>
+                                                <li>Todas las letras en minúscula</li>
+                                                <li>Separa cada palabra con un guion bajo</li>
+                                                <li>Debe tener máximo 20 caracteres.</li>
+                                              </ul>
+                                            </div>
+                                            <div class="drop-area mt-4">
+                                              <img src="./assets/img/drop-icon.svg" alt="drop-icon">
+                                              <input type="file" id="load-file" hidden>
+                                              <label class="btn-file">Subir documentos desde mi equipo</label>
+                                              <span>O arrastra los archivos aquí</span>
+                                            </div>
+                                            <div class="preview"></div>
+                                            <div class="d-flex justify-content-center">
+                                              <button class="btn medium-button button button-success mt-4" disabled>Subir</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+      
+      
+                        <button type="button" class="btn btn-dark mt-3" data-toggle="modal" data-target="#modal-spinner">
+                          Modal spinner
+                        </button>
+                      
+                          <!-- modal spinner -->
+                          <div class="modal fade" id="modal-spinner" tabindex="-1" role="dialog" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered" role="document">
+                                  <div class="modal-content">
+                                      <div class="modal-body mt-2">
+                                          <div class="container text-center mt-4 mb-4">
+                                            <div class="spinner-border text-danger" role="status">
+                                              <span class="sr-only"></span>
+                                            </div>
+                                            <h4>Cargando información</h4>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                  
+              </div>
+      
+              <div class="col-md-4">
+                <!-- buttons -->
+                <h4 class="text-danger">Buttons</h4>
+                <button class="btn medium-button button button-success mb-3">Active</button>
+                <button class="btn medium-button button button-success mb-3" disabled>Disabled</button>
+                <button class="btn medium-button button button-success-outline mb-3">Outline Success</button>
+                <button class="btn medium-button button button-error-outline mb-3">Outline Error</button>
+                <button class="btn medium-button button button-danger mb-3">Danger</button>
+                <button class="btn medium-button button button-secondary mb-3">Secondary</button>
+                <button class="btn medium-button button button-icon mb-3">
+                  <span>+</span>
+                  <span>Icon Button</span>
+                </button>
+                <button type="button" class="btn btn-primary" id="liveToastBtn">Show live toast</button>
+      
+                <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+                  <div id="liveToast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+                    <div class="toast-header">
+                      <img src="..." class="rounded me-2" alt="...">
+                      <strong class="me-auto">Bootstrap</strong>
+                      <small>11 mins ago</small>
+                      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                    </div>
+                    <div class="toast-body">
+                      Hello, world! This is a toast message.
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6">
+              <h4 class="text-danger">Table</h4>
+              <div class="scroll-table">
+                <table class="table table-bordered text-center">
+                  <thead>
+                    <tr>
+                      <th>Nombre</th>
+                      <th>Edad</th>
+                      <th>Email</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Usuario 1</td>
+                      <td>25</td>
+                      <td>usuario1@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>Usuario 2</td>
+                      <td>30</td>
+                      <td>usuario2@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>Usuario 3</td>
+                      <td>30</td>
+                      <td>usuario2@example.com</td>
+                    </tr>
+                    <tr>
+                      <td>Usuario 4</td>
+                      <td>30</td>
+                      <td>usuario2@example.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <h4 class="text-danger">Tabs</h4>
+      
+              <nav class="nav row nav-pills ">
+                <a data-toggle="tab" href="#tab1" class="col-md-3  text-center tab nav-link active"
+                  href="#">Tab1</a>
+                <a data-toggle="tab" href="#tab2" class="col-md-3  text-center tab nav-link"
+                  href="#">Tab2</a>
+                <a data-toggle="tab" href="#tab3" class="col-md-4  text-center tab nav-link" href="#">Tab3</a>
+                <a data-toggle="tab" href="#tab4" class="col-md-2  text-center tab nav-link" href="#">Tab4</a>
+              </nav>
+      
+              <div class="tab-content mt-3">
+                <div id="tab1" class="tab-pane active active-tab">
+                  Content tab 1
+                </div>
+                <div id="tab2" class="tab-pane">
+                  Content tab 2
+                </div>
+                <div id="tab3" class="tab-pane">
+                  Content tab 3
+                </div>
+                <div id="tab4" class="tab-pane">
+                  Content tab 4
+                </div>
+              </div>
+      
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-8">
+              <h4 class="text-title">Accordion type 2</h4>
+      
+              <div class="accordion-type-2 p-3 mt-5">
+                <div class="accordion-type-2__button">
+                  <span class="accordion-type-2__button--step">Paso Inicial - 1</span>
+                  <div role="button" class="accordion-type-2__button--drop-down button-drop">
+                    <span>Detalles</span>
+                    <img class="angle-img" src="./assets/img/down_angle.svg"/>
+                  </div>
+                </div>
+                <div class="accordion-type-2__status mb-2">
+                  <div class="accordion-type-2__status--circle-success"></div>
+                  <span class="accordion-type-2__status--description">Abierto</span>
+                </div>
+                <div class="row align-items-center accordion-type-2__header">
+                  <div class="col-md-4 accordion-type-2__header--item">
+                    <span>ANS. Solicitud: <span class="text-title">16 (Horas/Hábiles)</span></span>
+                  </div>
+                  <div class="col-md-4 accordion-type-2__header--item">
+                    <span>Responsable: <span class="text-title">Nombre Ejemplo Largo</span></span>
+                  </div>
+                  <div class="col-md-4 accordion-type-2__header--item">
+                    <div class="d-flex justify-content-end">
+                      <button class="btn button button-icon-error">
+                        <div class="d-flex align-items-center justify-content-center">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path class="icon-button" d="M3.48889 12.4667H9.6V11.1333H3.48889V12.4667ZM3.48889 8.66667H12.5111V7.33333H3.48889V8.66667ZM3.48889 4.86667H12.5111V3.53333H3.48889V4.86667ZM1.33333 16C0.977778 16 0.666667 15.8667 0.4 15.6C0.133333 15.3333 0 15.0222 0 14.6667V1.33333C0 0.977778 0.133333 0.666667 0.4 0.4C0.666667 0.133333 0.977778 0 1.33333 0H14.6667C15.0222 0 15.3333 0.133333 15.6 0.4C15.8667 0.666667 16 0.977778 16 1.33333V14.6667C16 15.0222 15.8667 15.3333 15.6 15.6C15.3333 15.8667 15.0222 16 14.6667 16H1.33333ZM1.33333 14.6667H14.6667V1.33333H1.33333V14.6667Z" fill="#D81E05"/>
+                            </svg>
+                            <span class="ms-2">Ver Formulario</span>
+                        </div>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-type-2__body">
+                  <div class="accordion-type-2__body--content">
+      
+                    <div class="divider my-4"></div>
+      
+                    <div class="row accordion-type-2__body--content--item">
+      
+                      <div class="col-md-4 accordion-type-2__body--content--item-description">
+                        <span class="d-block mb-2">Fecha creación: <span class="text-title">30/05/2023</span></span>
+                        <span class="d-block">Paso ID: <span class="text-title">123456</span></span>
+                      </div>  
+      
+                      <div class="col-md-4 accordion-type-2__body--content--item-description">
+                        <span class="d-block mb-2">Fecha cierre: <span class="text-title">10/07/2023</span></span>
+                        <span class="d-block">Tarea ID: <span class="text-title">123456</span></span>
+                      </div>
+      
+                      <div class="col-md-4 accordion-type-2__body--content--item-description">
+                        <span class="d-block mb-2">Fecha vencimiento: <span class="text-title">30/06/2023</span></span>
+                      </div>
+                    </div>
+      
+                    <div class="row mt-4">
+                      <div class="col-md-12">
+                        <span class="text-title letter-subtitle-var">Observación</span>
+      
+                        <div class="alert alert-secondary mt-2 letter-medium">
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore 
+                        </div>
+      
+                        <div class="divider-secondary"></div>
+                      </div>
+      
+                      <div class="col-md-12 mt-3">
+                        <div class="blog_comments">
+                          <span class="letter-subtitle-var">Comentarios de la bitácora</span>
+                          <div class="alert alert-secondary mt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <span class="letter-medium"><b class="text-title">Nombre largo ejemplo:</b></span>
+                              <span class="text-title letter-medium">30/08/2023</span>
+                            </div>
+                            <span class="letter-medium mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </span>
+                          </div>
+                          <div class="alert alert-secondary mt-2">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <span class="letter-medium"><b class="text-title">Nombre largo ejemplo:</b></span>
+                              <span class="text-title letter-medium">30/08/2023</span>
+                            </div>
+                            <span class="letter-medium mt-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore </span>
+                          </div>
+      
+                          <div class="d-flex justify-content-center">
+                            <span role="button" class="border-text">Cargar todos</span>
+                          </div>
+      
+                        </div>
+                      </div>
+                    </div>
+      
+                  </div>
+                </div>
+              </div>
+      
+              
+      
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Inicio Footer -->
+  <footer class="container-fluit mt-5 px-2">
+    <img src="./assets/img/footer.svg" alt="">
+  </footer>
+  <!-- Fin Footer -->
+
+  <script src="./assets/js/components/drag_and_drop.js"></script>
+  <script src="./assets/js/components/accordion.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+    integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+
+</body>
+</html>

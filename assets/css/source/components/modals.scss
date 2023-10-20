@@ -1,0 +1,30 @@
+.modal .modal-dialog{
+    max-width: 39.313rem;
+}
+
+.icon-alert{
+    position: absolute;
+    left: -3.313rem;
+    top: -2.063rem;
+}
+
+.icon-alert-error{
+    position: absolute;
+    left: -4rem;
+    top: -2.438rem;
+}
+
+.check-modal{
+    input{
+        border: 1px solid $red;
+    }
+    label{
+        font-size: 0.688rem;
+    }
+}
+
+
+.scroll-modal{
+    max-height: 18.75rem;
+    overflow-y: scroll;
+}

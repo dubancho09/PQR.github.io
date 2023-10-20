@@ -1,0 +1,52 @@
+.nav-pills {
+    border-bottom: 1px solid #D81E04;
+    
+    a.tab.nav-link {
+        background-color: transparent;
+        font-size: 15px;
+        color: #9E9E9E;
+    }
+
+    a.tab.nav-link.active {
+        background-color: transparent;
+        border-radius: 0px ;
+        border-bottom: 2px solid #D81E05;
+        background-color: transparent;
+        border-radius: 0px ;
+        border-bottom: 2px solid #D81E05;
+        color: #D81E04;
+    }
+
+    a.tab.nav-link:focus {
+        background-color: transparent ;
+        border-radius: 0px ;
+        border-bottom: 2px solid #D81E05 ;
+        color: #D81E04 ;
+        font-weight: bold;
+    }
+
+}
+
+
+.nav-pills .active {
+    font-weight: bold ;
+}
+
+
+
+
+
+.tab-pane {
+    border: none;
+    border-color: transparent ;
+    color: #000 ;
+}
+
+.tab-pane .comment {
+    font-weight: normal;
+    color: #000 ;
+}
+
+.active a {
+    color: #D81E05 ;
+}

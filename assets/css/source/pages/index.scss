@@ -1,0 +1,15 @@
+.form-disabled{
+    label{
+        font-size: 13px;
+        opacity: 0.44999998807907104;
+    }
+}
+
+.description-request{
+    &__item{
+        display: block;
+        font-size: 15px;
+        font-weight: 400;
+        margin-bottom: 0.625rem;
+    }
+}

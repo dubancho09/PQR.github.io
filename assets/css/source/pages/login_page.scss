@@ -1,0 +1,88 @@
+.bg-login {
+    background-image: url(../../img/bg_login.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    height: 470px;
+}
+
+.more_info{
+    height: 27.625rem;
+    
+    display: flex;
+    align-items: end;
+    
+    .text{
+        background-color: rgba($color: #000000, $alpha: 0.4);
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 65px;
+
+        .description{
+            width: 70%;
+            padding: 10px;
+            text-align: start;
+            span{
+                color: white;
+                font-size: 15px;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    font-weight: bold;
+                }
+            }
+        }
+        
+    }
+}
+
+%baseForm{
+    position: relative;
+
+    .card-form-login{
+        position: absolute;
+        width: 45%;
+        
+        left: 45.5%;
+        top: -75px;
+        z-index: 999;
+
+        .subtitle{
+            font-size: 25px;
+            font-weight: bold;
+        }
+    }
+}
+
+.login-form{
+    @extend %baseForm;
+    //height: 600px;
+}
+
+
+
+.forgot-pass{
+    color: $red;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 13px;
+
+    &:hover{
+        color: $red;
+        border-bottom: 1px solid $red;
+    }
+}
+
+.create-account{
+    span{
+        font-size: 13px;
+
+        a{
+            color: $red;
+            font-weight: 600;
+            text-decoration: none;
+        }
+    }
+}
+
+

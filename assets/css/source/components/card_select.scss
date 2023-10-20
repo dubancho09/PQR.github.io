@@ -1,0 +1,85 @@
+.card-option {
+    position: relative;
+}
+
+.card-option-item1 {
+    transition: transform 300ms ease;
+}
+
+.card-option-item1 span {
+    font-size: 14px;
+}
+
+.card-option-radio {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: absolute;
+    display: none;
+    top: 5px;
+    right: 13px;
+    z-index: 1;
+    border-radius: 100%;
+    height: 20px;
+    width: 20px;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+
+.card-option-radio-var {
+    top: 18px;
+    left: 21px;
+}
+
+
+
+
+.card-option-radio:checked,
+.card-option-radio-1:checked {
+    display: block;
+    background-color: white;
+    border: 6px solid #D81E04;
+    opacity: 1;
+}
+
+
+
+.card-option-radio:checked+.card-option-item1 {
+    border: 1px solid #D81E04;
+    transform: scale(1.05);
+}
+
+.card-option-radio:checked+.card-option-item1 .icon-card-option {
+    fill: #D81E04;
+    transition: all 300ms;
+}
+
+.card-option-radio:checked+.card-option-item1 .title-card-option {
+    color: #D81E04;
+    transition: all 300ms;
+}
+
+
+.card-option-select {
+    display: none;
+}
+
+.card-option-select-1 {
+    display: block;
+}
+
+
+.card-option-select:checked+.card-option-item1 {
+    border: 1px solid #D81E04;
+    transform: scale(1.05);
+}
+
+.title-card-option-1 {
+    font-size: 13px !important;
+}
+
+.card-option-select:checked+.card-option-item1 .title-card-option-1 {
+    color: #D81E04 !important;
+    transition: all 300ms;
+}

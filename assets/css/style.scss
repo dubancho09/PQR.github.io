@@ -1,0 +1,36 @@
+@charset 'utf-8';
+
+//configurations and helpers
+@import './source/abstracts/variables.scss';
+@import './source/abstracts/media-queries.scss';
+
+// Base stuff
+@import './source/base/fonts';
+
+// Components
+@import './source/components/buttons.scss';
+@import './source/components/inputs.scss';
+@import './source/components/helpers.scss';
+@import './source/components/modals.scss';
+@import './source/components/drag_and_drop.scss';
+@import './source/components/table.scss';
+@import './source/components/card.scss';
+@import './source/components/alert.scss';
+@import './source/components/badge.scss';
+@import './source/components/tabs.scss';
+@import './source/components/accordion.scss';
+@import './source/components/pagination.scss';
+@import './source/components/progress.scss';
+@import './source/components/card_select.scss';
+@import './source/components/otp.scss';
+
+//layout
+@import './source/layout/nav';
+@import './source/layout/footer';
+@import './source/layout/content';
+
+//pages
+@import './source/pages/index.scss';
+@import './source/pages/login_page.scss';
+@import './source/pages/forgot-password.scss';
+
