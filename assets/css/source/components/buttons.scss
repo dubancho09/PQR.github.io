@@ -15,6 +15,11 @@
     height: 2.75rem;
 }
 
+.filled-custom-buttom{
+    width: 100%;
+    height: 2.75rem;
+}
+
 
 
 .button{
@@ -124,3 +129,15 @@
     }
 }
 
+.custom-button-home.disabled{
+    .card{
+        background-color: #F7F7F7;
+        box-shadow: none;
+        span{
+            color: #949494;
+        }
+        b{
+            color: #949494;
+        }
+    }
+}

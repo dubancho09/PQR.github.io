@@ -88,3 +88,68 @@
 #card-success-1{
     display: none;
 }
+
+.f20{
+    font-size: 20px;
+}
+
+.f13{
+    font-size: 13px;
+}
+
+.f15{
+    font-size: 15px;
+}
+
+.f18{
+    font-size: 18px;
+}
+
+.letter-password{
+    margin-left: 2px;
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+@mixin line($width) {
+    width: $width;
+    background-color: $red;
+    height: 0.5px;
+  }
+
+.line1{
+    @include line(70%);
+}
+
+.line2{
+    @include line(80%);
+    //#D81E04
+    //#D81E04
+}
+
+.line3{
+    @include line(75%);
+}
+.dropdown{
+    #dropdownMenuButton{
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    .dropdown-menu{
+        .dropdown-item{
+            a{
+                text-decoration: none;
+                color: #363636;
+                font-size: 13px;
+            }
+        }
+
+        .dropdown-item:active{
+            background-color: white;
+        }
+        
+    }
+}

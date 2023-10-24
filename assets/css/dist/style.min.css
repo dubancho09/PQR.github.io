@@ -65,6 +65,11 @@
   height: 2.75rem;
 }
 
+.filled-custom-buttom {
+  width: 100%;
+  height: 2.75rem;
+}
+
 .button {
   transition: all 300ms;
   font-weight: 500;
@@ -167,6 +172,17 @@
   color: #ffffff;
 }
 
+.custom-button-home.disabled .card {
+  background-color: #F7F7F7;
+  box-shadow: none;
+}
+.custom-button-home.disabled .card span {
+  color: #949494;
+}
+.custom-button-home.disabled .card b {
+  color: #949494;
+}
+
 .form-group .form-floating label {
   padding-left: 0;
 }
@@ -220,7 +236,7 @@
   position: absolute;
   bottom: 11px;
   right: 0;
-  z-index: 9999;
+  z-index: 1;
 }
 .input-password div #img-eye-hide {
   display: none;
@@ -326,6 +342,61 @@
 
 #card-success-1 {
   display: none;
+}
+
+.f20 {
+  font-size: 20px;
+}
+
+.f13 {
+  font-size: 13px;
+}
+
+.f15 {
+  font-size: 15px;
+}
+
+.f18 {
+  font-size: 18px;
+}
+
+.letter-password {
+  margin-left: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+.line1 {
+  width: 70%;
+  background-color: #D81E04;
+  height: 0.5px;
+}
+
+.line2 {
+  width: 80%;
+  background-color: #D81E04;
+  height: 0.5px;
+}
+
+.line3 {
+  width: 75%;
+  background-color: #D81E04;
+  height: 0.5px;
+}
+
+.dropdown #dropdownMenuButton {
+  text-decoration: none;
+  font-weight: bold;
+}
+.dropdown .dropdown-menu .dropdown-item a {
+  text-decoration: none;
+  color: #363636;
+  font-size: 13px;
+}
+.dropdown .dropdown-menu .dropdown-item:active {
+  background-color: white;
 }
 
 .modal .modal-dialog {
@@ -889,6 +960,10 @@
   color: #ffffff;
 }
 
+.nav2 {
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.27);
+}
+
 .content {
   background-color: white;
 }
@@ -911,6 +986,13 @@
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 0.625rem;
+}
+
+.bg-edificios {
+  background-image: url("../../img/bg-edificios.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
 }
 
 .bg-login {
