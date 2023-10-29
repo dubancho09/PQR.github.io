@@ -93,12 +93,20 @@
     font-size: 20px;
 }
 
+.f23{
+    font-size: 23px;
+}
+
 .f13{
     font-size: 13px;
 }
 
 .f15{
     font-size: 15px;
+}
+
+.f14{
+    font-size: 14px;
 }
 
 .f18{
@@ -132,6 +140,10 @@
 .line3{
     @include line(75%);
 }
+
+.line4{
+    @include line(85%);
+}
 .dropdown{
     #dropdownMenuButton{
         text-decoration: none;
@@ -152,4 +164,13 @@
         }
         
     }
+}
+
+.option-active{
+    border: 1px solid $red;
+}
+
+.code-section{
+    width: 100%;
+    background-color: #F7F1D1;
 }

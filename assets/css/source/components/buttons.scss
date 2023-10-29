@@ -81,6 +81,15 @@
     color: $white;
 }
 
+
+.button-secondary1{
+    background-color: #E8EBED;
+}
+
+.button-secondary1:hover{
+    background-color: #E8EBED;
+}
+
 .button-secondary{
     background-color: $medium-gray;
 }
@@ -139,5 +148,16 @@
         b{
             color: #949494;
         }
+    }
+}
+
+.custom-text-area{
+    position: relative;
+    i{
+        font-size: 13px;
+        color: #36363684;
+        position: absolute;
+        bottom:10px;
+        right: 10px;
     }
 }

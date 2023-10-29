@@ -12,6 +12,7 @@
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./assets/css/dist/style.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body class="content">
@@ -85,7 +86,7 @@
                             <div class="multisteps-form__progress">
                                 <a class="multisteps-form__progress-btn js-active" href="#" title="Datos personales"
                                     disabled>Datos personales</a>
-                                <a class="multisteps-form__progress-btn" href="#" title="Datos solicitud" disabled>Datos
+                                <a class="multisteps-form__progress-btn js-active" href="#" title="Datos solicitud" disabled>Datos
                                     solicitud</a>
                                 <a class="multisteps-form__progress-btn" href="#" title="Anexos" disabled>Anexos</a>
                             </div>
@@ -95,175 +96,179 @@
                 </div>
 
                 <div class="col-md-12 mt-3">
-                    <div class="card card-shadow p-5">
+                    <div class="card card-shadow animate__animated animate__fadeIn  p-5">
                         <div class="text-center">
-                            <b class="f23 text-title">Datos personales</b>
-                            <span class="d-block">Por favor ingresa la información completa del solicitante</span>
+                            <b class="f23 text-title">Datos completos</b>
+                            <span class="d-block">Ingresa tu información detallada</span>
                         </div>
 
-                        <form class="row mt-4">
-                            <!-- Tipo de documento -->
+                        <!-- tipo solicitud -->
+                        <div class="row mt-5 pb-5">
+                            <div class="col-md-6">
+                                <a class="card-button1" href="./data-request.html">
+                                    <div class="card card-shadow option-active p-3">
+                                        <div class="text-center">
+                                            <img src="./assets/img/icon_notes.svg" alt="notes">
+                                            <span>Petición</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="card-button1" href="./data-request-queja.html">
+                                    <div class="card card-shadow  p-3">
+                                        <div class="text-center">
+                                            <img src="./assets/img/icon_cancelar.svg" alt="notes">
+                                            <span>Queja</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="divider"></div>
+
+                        <form class="row mt-5">
+
+                            <!-- Clasificación del Solicitante * -->
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <div class="form-floating">
                                         <select id="type_document" class="form-select">
-                                            <option value="1">Cédula de ciudadanía</option>
+                                            <option value="1">Asegurado</option>
                                             <option value="2">Lorem</option>
                                         </select>
-                                        <label class="pt-2">Tipo de documento</label>
+                                        <label class="pt-2">Clasificación del Solicitante *</label>
                                     </div>
                                 </div>
                             </div>
 
 
-                            <!-- Número de documento -->
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="form-floating mb-3">
-                                        <input type="number" class="form-control" placeholder="Número de documento">
-                                        <label class="form-label" for="floatingInput">Número de documento</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Input Nombre completo -->
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" placeholder="Nombre completo">
-                                        <label class="form-label" for="floatingInput">Nombre completo</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Input email -->
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="form-floating mb-3">
-                                        <input type="email" class="form-control" placeholder="Email">
-                                        <label class="form-label" for="floatingInput">Email</label>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Input número de teléfono -->
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" placeholder="Número de teléfono">
-                                        <label class="form-label" for="floatingInput">Número de teléfono</label>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <!-- Input Dirección de residencia -->
-                            <div class="col-md-4">
-                                <div class="form-group">
-                                    <div class="form-floating mb-3">
-                                        <input type="text" class="form-control" placeholder="Dirección de residencia">
-                                        <label class="form-label" for="floatingInput">Dirección de residencia</label>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- Departamento de residencia -->
+                            <!-- ¿Cuál es el motivo? * -->
                             <div class="col-md-4">
                                 <div class="form-group">
                                     <div class="form-floating">
                                         <select id="type_document" class="form-select">
-                                            <option value="1">Valle del Cauca</option>
+                                            <option value="1">Cotización</option>
                                             <option value="2">Lorem</option>
                                         </select>
-                                        <label class="pt-2">Departamento de residencia</label>
+                                        <label class="pt-2">¿Cuál es el motivo? *</label>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Municipio de residencia -->
+                            <!-- ¿Cuál es el producto? * -->
                             <div class="col-md-4">
+                                <div class="form-group">
+                                    <div class="form-floating">
+                                        <select id="type_document" class="form-select">
+                                            <option value="1">Seguro de Hogar</option>
+                                            <option value="2">Lorem</option>
+                                        </select>
+                                        <label class="pt-2">¿Cuál es el producto? *</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- País donde se genera la solicitud *  -->
+                            <div class="col-md-4 mt-3">
+                                <div class="form-group">
+                                    <div class="form-floating">
+                                        <select id="type_document" class="form-select">
+                                            <option value="1">Colombia</option>
+                                            <option value="2">Lorem</option>
+                                        </select>
+                                        <label class="pt-2">País donde se genera la solicitud *</label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Departamento *  -->
+                            <div class="col-md-4 mt-3">
+                                <div class="form-group">
+                                    <div class="form-floating">
+                                        <select id="type_document" class="form-select">
+                                            <option value="1">Valle del cauca</option>
+                                            <option value="2">Lorem</option>
+                                        </select>
+                                        <label class="pt-2">Departamento *</label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Municipio * -->
+                            <div class="col-md-4 mt-3">
                                 <div class="form-group">
                                     <div class="form-floating">
                                         <select id="type_document" class="form-select">
                                             <option value="1">Cali</option>
                                             <option value="2">Lorem</option>
                                         </select>
-                                        <label class="pt-2">Municipio de residencia</label>
+                                        <label class="pt-2">Municipio *</label>
                                     </div>
                                 </div>
                             </div>
 
-                            <!-- Fecha de nacimiento -->
-                            <div class="col-md-4">
+                            <!-- ¿Hacia cual canal desea dirigir la petición? * -->
+                            <div class="col-md-6 mt-3">
                                 <div class="form-group">
-                                    <div class="form-floating mb-3">
-                                        <input type="date" class="form-control" placeholder="Fecha de nacimiento">
-                                        <label class="form-label" for="floatingInput">Fecha de nacimiento</label>
+                                    <div class="form-floating">
+                                        <select id="type_document" class="form-select">
+                                            <option value="1">Centro de atención telefónica (Call center / contac Center)</option>
+                                            <option value="2">Lorem</option>
+                                        </select>
+                                        <label class="pt-2">¿Hacia cual canal desea dirigir la petición? *</label>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-12 mb-3">
-                                <div class="d-flex justify-content-between align-items-center mt-4">
-                                    <span class="f18 text-title">Datos adicionales</span>
-                                    <div class="line4"></div>
-                                </div>
-                            </div>
-
-                            <div class="row align-items-center">
-                                <!-- Género -->
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <div class="form-floating">
-                                            <select id="type_document" class="form-select">
-                                                <option value="1">Femenino</option>
-                                                <option value="2">Lorem</option>
-                                            </select>
-                                            <label class="pt-2">Género</label>
-                                        </div>
-                                    </div>
-                                </div>
                             
-                                <!-- LGTBI -->
-                                <div class="col-md-6">
-                                    <label style="color: gray;" class="f14">LGBTI</label>
-                                    <div class="row buttons-yes-no">
-                                        <div class="col-md-6">
-                                            <button type="button" class="btn_yes btn button-secondary  filled-custom-buttom">Si</button>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <button type="button" class="btn_no btn btn-danger  filled-custom-buttom">No</button>
-                                        </div>
+
+                            <!-- ¿Punto mediante el cuál radicó esta PQRS * -->
+                            <div class="col-md-6 mt-3">
+                                <div class="form-group">
+                                    <div class="form-floating">
+                                        <select id="type_document" class="form-select">
+                                            <option value="1">Internet</option>
+                                            <option value="2">Lorem</option>
+                                        </select>
+                                        <label class="pt-2">Punto mediante el cuál radicó esta PQRS *</label>
                                     </div>
                                 </div>
+                            </div>
 
-                                <!-- ¿Tiene alguna condición especial? * -->
-                                <div class="col-md-6 mt-3">
-                                    <label style="color: gray;" class="f14 mb-1">¿Tiene alguna condición especial? *</label>
-                                    <div class="row buttons-yes-no">
-                                        <div class="col-md-6">
-                                            <button type="button" class="btn_yes btn button-secondary  filled-custom-buttom">Si</button>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <button type="button" class="btn_no btn btn-danger  filled-custom-buttom">No</button>
-                                        </div>
-                                    </div>
+                            <div class="col-md-12 mt-4">
+                                <hr>
+                            </div>
+                        
+                            <div class="col-md-6 mt-3">
+                                <div class="form-group">
+                                    <label style="color: gray;" class="f14 mb-1">Placa vehículo asegurado</label>
+                                    <input class="form-control" type="text" disabled>
                                 </div>
+                            </div>
 
-                                <div class="col-md-6 mt-3">
-                                    <div class="form-group">
-                                        <label style="color: gray;" class="f14 mb-1">¿Cuál condición especial?</label>
-                                        <input class="form-control" type="text" disabled>
-                                    </div>
+                            <div class="col-md-6 mt-3">
+                                <div class="form-group">
+                                    <label style="color: gray;" class="f14 mb-1">Punto mediante el cuál radicó esta PQRS *</label>
+                                    <input class="form-control" type="text" disabled>
                                 </div>
-
                             </div>
                         </form>
                     </div>
 
+                    <div class="card card-shadow p-4  mt-4">
+                        <div class="form-group custom-text-area">
+                            <span style="color: gray;" class="f14">Descripción de la solicitud*</span>
+                            <textarea class="form-control mt-2" rows="4"></textarea>
+                            <i>13/400 caracteres</i>
+                        </div>
+                    </div>
+
                     <div class="d-flex justify-content-center">
-                        <button onclick="window.location.href='/data-request.html'" class=" mt-4 btn button-danger medium-button">Continuar</button>
+                        <button onclick="window.location.href='/anexos_page.html'"  class=" mt-4 btn button-danger medium-button">Continuar</button>
                     </div>
                 </div>
             </div>

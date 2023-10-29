@@ -1,3 +1,7 @@
+body {
+  counter-reset: step;
+}
+
 .inf-mobile {
   display: none;
 }
@@ -129,6 +133,14 @@
   color: #ffffff;
 }
 
+.button-secondary1 {
+  background-color: #E8EBED;
+}
+
+.button-secondary1:hover {
+  background-color: #E8EBED;
+}
+
 .button-secondary {
   background-color: #B1B1B1;
 }
@@ -181,6 +193,17 @@
 }
 .custom-button-home.disabled .card b {
   color: #949494;
+}
+
+.custom-text-area {
+  position: relative;
+}
+.custom-text-area i {
+  font-size: 13px;
+  color: rgba(54, 54, 54, 0.5176470588);
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
 }
 
 .form-group .form-floating label {
@@ -348,12 +371,20 @@
   font-size: 20px;
 }
 
+.f23 {
+  font-size: 23px;
+}
+
 .f13 {
   font-size: 13px;
 }
 
 .f15 {
   font-size: 15px;
+}
+
+.f14 {
+  font-size: 14px;
 }
 
 .f18 {
@@ -386,6 +417,12 @@
   height: 0.5px;
 }
 
+.line4 {
+  width: 85%;
+  background-color: #D81E04;
+  height: 0.5px;
+}
+
 .dropdown #dropdownMenuButton {
   text-decoration: none;
   font-weight: bold;
@@ -397,6 +434,15 @@
 }
 .dropdown .dropdown-menu .dropdown-item:active {
   background-color: white;
+}
+
+.option-active {
+  border: 1px solid #D81E04;
+}
+
+.code-section {
+  width: 100%;
+  background-color: #F7F1D1;
 }
 
 .modal .modal-dialog {
@@ -937,6 +983,10 @@
 .card-option-select:checked + .card-option-item1 .title-card-option-1 {
   color: #D81E04 !important;
   transition: all 300ms;
+}
+
+.card-button1 {
+  text-decoration: none;
 }
 
 .otp-input {
