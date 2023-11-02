@@ -81,7 +81,7 @@ function processFile(file){
                     </div>
                     <div class="mt-2">
                         
-                    <div class="progress">
+                    <div style="height: 10px;" class="progress">
                         <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                         

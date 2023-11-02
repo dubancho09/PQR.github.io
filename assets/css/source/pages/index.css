@@ -1,0 +1,18 @@
+.form-disabled label {
+  font-size: 13px;
+  opacity: 0.4499999881;
+}
+
+.description-request__item {
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  margin-bottom: 0.625rem;
+}
+
+.bg-edificios {
+  background-image: url("../../img/bg-edificios.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}/*# sourceMappingURL=index.css.map */

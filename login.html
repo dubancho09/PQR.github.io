@@ -53,7 +53,7 @@
                         <div class="more_info">
                             <div class="text">
                                 <div class="description">
-                                    <span>Conoce más en <a href="#">www.https://www.mapfre.com.co/sistema-atencion-consumidor/educacion-financiera/</a></span>
+                                    <span>Conoce más información ingresando <a href="#">aquí</a> 👉</span>
                                 </div>   
                             </div>
                         </div>
@@ -242,7 +242,7 @@ aria-hidden="true">
             <div class="d-flex justify-content-end mt-2 me-2">
                 <span class="btn-close" data-dismiss="modal" aria-label="Close"></span>
             </div>
-            <div class="modal-body">
+            <div class="modal-body p-0">
                 <div class="container text-center mt-4 mb-4">
                     <div class="container">
                         <h5><strong class="text-title">Queremos brindarte nuestro mejor servicio</strong></h5>
@@ -253,29 +253,41 @@ aria-hidden="true">
 
                     <div class="row">
                         
-                        <div class="col-md-6 card-option mt-3">
-                            <input id="persona-natural" class="card-option-radio" type="radio" name="option">
-                            <label for="persona-natural" class="card card-option-item1 py-3 px-2">
-                              <div class="d-flex flex-column align-items-center">
-                                <img class="w100" src="./assets/img/avatar.svg"   >
-                                <span>Persona Natural</span>
-                              </div>
-                            </label>
+                        <div class="row px-5">
+                            <div class="col-md-6 card-option mt-3 ">
+                                <input id="persona-natural" class="card-option-radio" type="radio" name="option">
+                                <label for="persona-natural" class="card card-option-item1 py-3 px-2">
+                                  <div class="d-flex flex-column align-items-center">
+                                    <img class="w100" src="./assets/img/avatar.svg"   >
+                                    <span>Persona Natural</span>
+                                  </div>
+                                </label>
+                            </div>
+                            <div  class="col-md-6 card-option mt-3">
+                                <input id="persona-juridica" class="card-option-radio" type="radio" name="option">
+                                <label for="persona-juridica" class="card card-option-item1 py-3 px-2">
+                                  <div class="d-flex flex-column align-items-center">
+                                    <img class="w100" src="./assets/img/edificio-de-oficinas.svg"   >
+                                    <span>Persona Jurídica</span>
+                                  </div>
+                                </label>
+                            </div>
                         </div>
-                        <div  class="col-md-6 card-option mt-3">
-                            <input id="persona-juridica" class="card-option-radio" type="radio" name="option">
-                            <label for="persona-juridica" class="card card-option-item1 py-3 px-2">
-                              <div class="d-flex flex-column align-items-center">
-                                <img class="w100" src="./assets/img/edificio-de-oficinas.svg"   >
-                                <span>Persona Jurídica</span>
-                              </div>
-                            </label>
+
+                        
+                        <div class="code-section w-100 mt-3  animate__animated animate__fadeIn ">
+                            <div class=" p-2">
+                                <span class="f13">Recuerda qué una <b>“persona jurídica”</b> responde a una entidad empresarial legal.</span>
+                            </div>
                         </div>
+                            
 
                         <div class="mt-3 d-flex justify-content-center">
                             <button id="btn_continuar" class="btn medium-button button button-danger" disabled>Continuar</button>
                         </div>
                     </div>
+
+                    
                 </div>
             </div>
         </div>
@@ -287,6 +299,7 @@ aria-hidden="true">
     const persona_natural = document.querySelector('#persona-natural');
     const persona_juridica = document.querySelector('#persona-juridica');
     const btn_continue = document.querySelector('#btn_continuar');
+    const juridica = document.querySelector('.juridica');
     let page;
     persona_natural.addEventListener('change' , () => {
         if( persona_natural.checked ){
@@ -299,6 +312,7 @@ aria-hidden="true">
     persona_juridica.addEventListener('change' , () => {
         if( persona_juridica.checked ){
             btn_continue.disabled = false;
+            
             page = 1;
         }
        
